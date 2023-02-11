@@ -1,0 +1,101 @@
+@import '../../styles/variables';
+
+.pizza__block {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	padding-top: $spacing-medium;
+	border-radius: $border-radius-small;
+	box-shadow: $box-shadow;
+	transition: $transition;
+	width: 290px;
+	&:hover {
+		transform: $transform-scale;
+	}
+	.top {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		align-items: center;
+		margin: $spacing-medium;
+	}
+	img {
+		width: 260px;
+	}
+	.name {
+		font-size: $font-size-subtitle;
+		font-weight: $font-bold;
+	}
+}
+
+.selector {
+	display: flex;
+	flex-direction: column;
+	padding: $spacing-small;
+	background-color: $gray-100;
+	border-radius: $border-radius-small;
+	ul {
+		display: flex;
+		justify-content: center;
+		list-style: none;
+		margin-bottom: $spacing-small;
+		li {
+			margin-left: $spacing-medium;
+			padding: $spacing-small $spacing-medium;
+			border-radius: $border-radius-small;
+			cursor: pointer;
+			&:hover {
+				background-color: $gray-300;
+			}
+			&:first-child {
+				margin-left: 0;
+			}
+		}
+		.active {
+			background-color: $white;
+			cursor: default;
+			&:hover {
+				background-color: $white;
+			}
+		}
+	}
+}
+
+.block__bottom {
+	padding: $spacing-large;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	.price {
+		font-size: $font-size-subtitle;
+		font-weight: $font-medium;
+	}
+	button {
+		padding: $spacing-small $spacing-medium;
+		border: 1px solid $orange;
+		border-radius: $border-radius-large;
+		background-color: $white;
+		color: $orange;
+		font-size: $font-size-subtitle;
+		font-weight: $font-medium;
+		cursor: pointer;
+		transition: $transition;
+		&:hover {
+			background-color: $orange;
+			color: $white;
+			span {
+				color: $orange;
+				background-color: $white;
+			}
+		}
+		span {
+			color: $white;
+			background-color: $orange;
+			font-weight: $font-regular;
+			font-size: 13px;
+			margin-left: $spacing-ultra-small;
+			padding: $spacing-ultra-small $spacing-small;
+			border-radius: 50%;
+		}
+	}
+}

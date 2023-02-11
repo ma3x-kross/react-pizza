@@ -1,0 +1,19 @@
+@import '../../styles/variables';
+
+.logo {
+	display: flex;
+	img {
+		margin-right: $spacing-medium;
+	}
+}
+
+.logo__title {
+	font-weight: $font-bold;
+	font-size: $font-size-title;
+}
+
+.logo__subtitle {
+	font-weight: $font-regular;
+	color: $gray-500;
+	font-size: $font-size-main;
+}

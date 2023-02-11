@@ -1,0 +1,32 @@
+@import-normalize;
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;900&display=swap');
+@import './variables';
+
+* {
+	font-family: $font-family-main;
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+}
+
+a {
+	color: black;
+	text-decoration: none;
+}
+
+body {
+	background-color: $background;
+}
+
+.container {
+	padding: $spacing-large;
+	width: calc(100vw - 100px);
+	max-width: 1440px;
+	border-radius: $border-radius-small;
+	margin: $spacing-large auto;
+	background-color: $white;
+	@media (max-width: 645px) {
+		width: calc(100vw - 30px);
+		margin-top: $spacing-medium;
+	}
+}

@@ -1,0 +1,34 @@
+@import '../../styles//variables';
+
+.list {
+	display: flex;
+	align-items: center;
+	list-style: none;
+	font-weight: $font-medium;
+	gap: $spacing-medium;
+	flex-wrap: wrap;
+	li {
+		padding: $spacing-medium $spacing-large;
+		border-radius: $border-radius-medium;
+		display: flex;
+		align-items: center;
+		background-color: $gray-100;
+		cursor: pointer;
+		transition: $transition;
+		&:hover {
+			background-color: $gray-300;
+		}
+		@media (max-width: 890px){
+		// flex-direction: column;
+		padding: $spacing-small $spacing-medium;
+	}
+	}
+	.active {
+		cursor: default;
+		background-color: $black;
+		color: $white;
+		&:hover {
+			background-color: $black;
+		}
+	}
+}

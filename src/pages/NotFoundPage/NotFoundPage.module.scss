@@ -1,0 +1,19 @@
+@import '../../styles/variables';
+
+.container {
+	margin: 0 auto;
+	max-width: 750px;
+	padding: 100px;
+	text-align: center;
+	.title {
+		font-size: 48px;
+		font-weight: $font-medium;
+		span{
+			font-size: 64px;
+		}
+	}
+	.subtitle {
+		font-size: 22px;
+		font-weight: $font-regular;
+	}
+}

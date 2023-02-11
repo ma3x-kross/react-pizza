@@ -1,0 +1,14 @@
+@import '../../styles/variables';
+
+.container {
+	padding: $spacing-large;
+	display: flex;
+	gap: $spacing-medium;
+	h1 {
+		margin-bottom: $spacing-small;
+	}
+	h3 {
+		font-weight: $font-medium;
+		opacity: 0.5;
+	}
+}

@@ -1,0 +1,32 @@
+@import '../../styles/variables';
+.search {
+	left: -120px;
+	position: relative;
+	.search__input {
+		max-width: 400px;
+		width: calc(100vw - 100px);
+		border-radius: $border-radius-small;
+		padding: 12px 42px;
+		border: $border-gray;
+		outline: none;
+		font-size: $font-size-main;
+	}
+
+	.search__img,
+	.clear__img {
+		position: absolute;
+		width: 20px;
+		top: 13px;
+		opacity: 0.4;
+	}
+	.search__img {
+		left: 12px;
+	}
+	.clear__img {
+		right: 12px;
+		cursor: pointer;
+	}
+	@media (max-width: 1250px) {
+		left: 0;
+	}
+}
